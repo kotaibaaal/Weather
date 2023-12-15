@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 //make connect with url and send request
                 val urlConnection = url.openConnection() as HttpURLConnection
                 //waiting for 7000ms for response
-                urlConnection.connectTimeout = 700 //set timeout to 5 seconds
+                urlConnection.connectTimeout = 7000 //set timeout to 7 seconds
                 try {
                     //getting the response data
                     val  InpuStream = convertStreamToString(urlConnection.inputStream)
